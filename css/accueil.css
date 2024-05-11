@@ -33,13 +33,18 @@ header{
     padding: 0.5vw 1vh;
     height: 100%;
 }
-.title{
+.text_center{
     position: absolute;
+    top: 40%;
+    left: 25%;
+    width: 40%;
+    background-color: #ebe8e8c2;
+    border-radius: 20px;
+    padding: 1vw;
+
+}
+.title{
     color: #a879aa;
     text-shadow: 0px 0px 3px #6b206e;
-    background-color: #ebe8e8c2;
-    top: 50%;
-    left: 25%;
     font-size: 5vw;
-    border-radius: 20px;
 }
