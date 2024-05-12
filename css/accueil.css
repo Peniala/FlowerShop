@@ -1,13 +1,53 @@
+
+:root{
+    --border-color: #7e5680;
+    --text-color: #856086;
+
+}
+@font-face {
+    font-family: 'Pencerio-Hairline';
+    src: url('../fonts/Pencerio_Complete/Fonts/WEB/fonts/Pencerio-Hairline.woff2') format('woff2'),
+         url('../fonts/Pencerio_Complete/Fonts/WEB/fonts/Pencerio-Hairline.woff') format('woff'),
+         url('../fonts/Pencerio_Complete/Fonts/WEB/fonts/Pencerio-Hairline.ttf') format('truetype');
+    font-weight: 50;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DancingScript-Regular';
+    src: url('../fonts/DancingScript_Complete/Fonts/WEB/fonts/DancingScript-Regular.woff2') format('woff2'),
+         url('../fonts/DancingScript_Complete/Fonts/WEB/fonts/DancingScript-Regular.woff') format('woff'),
+         url('../fonts/DancingScript_Complete/Fonts/WEB/fonts/DancingScript-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DancingScript-Variable';
+    src: url('../fonts/DancingScript_Complete/Fonts/WEB/fonts/DancingScript-Variable.woff2') format('woff2'),
+         url('../fonts/DancingScript_Complete/Fonts/WEB/fonts/DancingScript-Variable.woff') format('woff'),
+         url('../fonts/DancingScript_Complete/Fonts/WEB/fonts/DancingScript-Variable.ttf') format('truetype');
+    font-weight: 400 700;
+    font-display: swap;
+    font-style: normal;
+}
 *{
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: sans-serif;
+}
 header{
     position: fixed;
+    top: 0;
     width: 100%;
+    z-index: 5;
+    background-color: #fff;
 }
 .navigation{
-
+    border-bottom: 1px solid var(--border-color);
 }
 .link_page{
     display: flex;
@@ -19,32 +59,190 @@ header{
     text-decoration: none;
     margin: 1vw;
     padding: 1vw;
-    color: #fff;
-    text-shadow: 0px 0px 8px #424242;
     font-weight: bolder;
-    font-size: 2vw;
+    font-size: 1vw;
+    color: var(--text-color);
+    transition: 2s;
 }
-.description{
+.link:hover{
+    text-decoration: underline;
+    line-height: 2px;
+    list-style: circle;
+}
+.mark{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    text-align: center;
+    /* padding: auto; */
+    /* width: 15%; */
+}
+#logo{
+    width: 100%;
+    height: 99%;
+    margin: auto;
+    /* background-color: #efd9f0; */
+}
+.back{
+    position:fixed;
+    background-image: url(../img/imprime-fleuri.jpg);
+    width: 100%;
     height: 100vh;
+    top: 0;
+    z-index: -1;
+}
+.texte_centre{
+    position: relative;
+    height: 50vh;
+    color: #fff;
+    text-shadow: 0px 0px 20px #470449;
+}
+.texte{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    bottom: 0;
+    z-index: 0;
+}
+.texte > *{
+    padding: 3vh 2vw;
+}
+.titre{
+    font-family: 'DancingScript-Regular';
+    font-size: 5vw;
+    z-index: 0;
+}
+.slogan{
+    background-color: #976f99cb;
+    font-size: 1.2vw;
+    width: 100%;
+}
+.corps{
+    margin-top: 10vh;
+    padding-top: 5vh;
+}
 
+.illustrations{
+    text-align: center;
+    justify-content: center;
+    /* height: 35vh; */
+    z-index: 99;
+    background-color: #fff;
 }
 .illustration{
-    width: 33%;
-    padding: 0.5vw 1vh;
+    width: 9%;
+    margin: auto 0.3vw;
+    border-radius: 35px;
+    border: 1px solid var(--border-color);
+    z-index: 99;
+}
+.offre{
+    padding: 1vw;
+    background-color: #fff;
+}
+.offres{
+    margin: 2vh;
+    padding: 5vh 5vw;
+    justify-content: center;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+.type_offre{
+    position: relative;
+}
+.type_offre h1{
+    font-family: 'DancingScript-Variable';
+    font-size: 2vw;
+    padding: 2vh;
+}
+.type_offre p{
+    margin: 2vh;
+}
+.mise_en_vue{
+    display: flex;
+    position: relative;
+}
+.affiche{
+    width: 30%;
+    text-align: center;
+    margin: 5vh auto;
+    /* border: 1px solid var(--border-color); */
+    border-radius: 40px;
+    overflow: hidden;
+    justify-content: center;
+}
+.affiche img{
+    width: 100%;
     height: 100%;
 }
-.text_center{
+.vue_centre{
     position: absolute;
-    top: 40%;
-    left: 25%;
-    width: 40%;
-    background-color: #ebe8e8c2;
-    border-radius: 20px;
-    padding: 1vw;
-
+    background-color: #b8b8b88f;
+    width: 100%;
+    height: 40%;
+    padding: 2vh 2vw;
+    text-align: center;
+    top: 30%;
+    color: #fff;
+    text-shadow: 0px 0px 4px var(--border-color);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
-.title{
-    color: #a879aa;
-    text-shadow: 0px 0px 3px #6b206e;
+.vue_centre h1{
+    padding: 1vw;
     font-size: 5vw;
+    font-family: 'Pencerio-Hairline';
+}
+footer{
+    /* border-top: 1px solid var(--border-color); */
+    background-color: #e9dfff;
+    padding: 2vh 0.5vw;
+    color: #470449;
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+}
+.information{
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color); */
+}
+/* .details{
+    text-align: center;
+} */
+.information ul li{
+    list-style: none;
+    margin: 3vh ;
+}
+.information > *{
+    width: 33%;
+}
+.information h1{
+    text-transform: capitalize;
+    font-size: 1vw;
+    font-weight: 100;
+    width: 30%;
+    margin: 2vh 0.5vw;
+    margin-left: 2vw;
+    padding: 1vh;
+    border-bottom: 1px solid var(--border-color);
+    /* border: solid; */
+}
+.mail{
+    padding: 1vh;
+}
+.mail input{
+    padding: 1.5vh 1vw;
+}
+.copyright{
+    text-align: center;
+    padding: 3vh;
+    font-size: 0.5vw;
+}
+.copyright h1{
+    font-weight: 100;
 }
