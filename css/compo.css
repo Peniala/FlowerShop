@@ -1,0 +1,83 @@
+.recherche{
+    margin-top: 15vh;
+    margin-left: 2vw;
+    border: solid;
+    width: 40%;
+    border-radius: 25px;
+    border: 1px solid var(--border-color);
+}
+.recherche form{
+    position: relative;
+}
+.recherche input{
+    padding: 2vh 1vw;
+    margin: 0.5vh 1vw;
+    border: none;
+}
+.recherche input[type="text"]{
+    width: 75%;
+    outline: none;
+}
+.recherche input[type="submit"]{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid var(--border-color);
+    background-color: transparent;
+}
+.produits{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.produit{
+    height: 60vh;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 2vh 1vw 6vh 1vw;
+}
+.produit img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.produit:hover img{
+    transform: scale(1.2);
+}
+.produit:hover .descri{
+    display: block;
+}
+.descri{
+    position: absolute;
+    background-color: #a5a5a570;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+}
+.descri h2{
+    font-family: 'DancingScript-Variable';
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 2.5vw;
+    background-color: var(--border-color);
+    margin-top: 10%;
+    padding: 1vh ;
+}
+.descri button{
+    position: absolute;
+    width: 80%;
+    padding: 2vh 1vw;
+    font-size: 1.2vw;
+    bottom: 5vh;
+    margin: auto;
+    left: 1vw;
+    right: 1vw;
+    border: 1px solid var(--border-color);
+    background-color: #998bb3cb;
+    color: #fff;
+    letter-spacing: 2px;
+}
