@@ -81,3 +81,27 @@
     color: #fff;
     letter-spacing: 2px;
 }
+.apercu{
+    display: flex;
+    background-image: url(../img/imprime-fleuri.jpg);
+    padding: 5vh 5vw;
+}
+.apercu > *{
+    width: 50%;
+    box-shadow: 0px 0px 15px #494949;
+}
+.demonstration{
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    padding: 2vh 2vw;
+}
+.demo_ttle{
+    font-family: 'Pencerio-Hairline';
+    letter-spacing: 2px;
+    color: var(--text-color);
+    padding: 2vh 1vw;
+}
+.demonstration img{
+    width: 40%;
+}

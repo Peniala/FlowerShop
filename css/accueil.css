@@ -104,6 +104,18 @@ header{
     width: 100%;
     bottom: 0;
     z-index: 0;
+    animation: title 1.5s linear;
+}
+@keyframes title{
+    0%{
+        left: -100vw;
+    }
+    50%{
+        left: -50vw;
+    }
+    100%{
+        left: 0;
+    }
 }
 .texte > *{
     padding: 3vh 2vw;
@@ -200,6 +212,7 @@ footer{
     background-color: #e9dfff;
     padding: 2vh 0.5vw;
     color: #470449;
+    font-weight: 100;
     /* display: grid;
     grid-template-columns: repeat(2,1fr); */
 }
@@ -224,10 +237,10 @@ footer{
 .information h1{
     text-transform: capitalize;
     font-size: 1vw;
-    font-weight: 100;
     width: 30%;
     margin: 2vh 0.5vw;
     margin-left: 2vw;
+    font-weight: 100;
     padding: 1vh;
     border-bottom: 1px solid var(--border-color);
     /* border: solid; */
